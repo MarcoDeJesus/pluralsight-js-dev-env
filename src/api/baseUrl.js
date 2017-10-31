@@ -1,5 +1,5 @@
 export default function getBaseUrl(){
-  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3002/' : '/';
+  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3002/' : 'https://agile-citadel-58282.herokuapp.com/';
 
   /*
   const inDevelopment = window.location.hostname === 'localhost';

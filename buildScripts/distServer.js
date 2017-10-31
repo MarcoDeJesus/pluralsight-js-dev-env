@@ -14,6 +14,9 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
+
+//Removing since now we're consuming the service from Heroku
+/*
 app.get('/users', function(req, res){
   // Hard coding for simplicity. Pretend this hits a real database
   res.json([
@@ -22,7 +25,7 @@ app.get('/users', function(req, res){
     {"id": 3, "fitstName":"Tina","lastName":"Lee","email":"lee.tina@hotmail.com"}
   ]);
 });
-
+*/
 
 app.listen(port, function(err){
   if(err){
